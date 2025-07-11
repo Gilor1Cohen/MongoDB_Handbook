@@ -1,3 +1,5 @@
+const User = require("../../models/User.schema");
+
 // Aggregation in MongoDB is a way to process and combine your data directly on the database server by passing documents through a series of simple steps called stages. Each stage (for example, $match to filter, $group to summarize, or $project to reshape) takes the results from the previous step and transforms them before passing them on. Using aggregation lets you get summaries, counts, joined data, and other insights without having to pull all your data into your application first.
 
 async function getUsersWithFriends() {
